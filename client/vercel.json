@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "ecom-server-two.vercel.app/$1"
+      "destination": "https://ecom-server-two.vercel.app/$1"
     },
     {
       "source": "/(.*)",
