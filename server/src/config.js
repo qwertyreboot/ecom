@@ -5,6 +5,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 const BCRYPT_HASH_SALT = Number(process.env.BCRYPT_HASH_SALT) ?? 10;
 const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
 const CLIENT_URL = process.env.CLIENT_URL;
+const MONGO_URL = process.env.MONGO_URL ?? "mongodb://localhost:27017/ecom";
 
 module.exports = {
   JWT_SECRET,
@@ -12,4 +13,5 @@ module.exports = {
   BCRYPT_HASH_SALT,
   STRIPE_SECRET_KEY,
   CLIENT_URL,
+  MONGO_URL,
 };

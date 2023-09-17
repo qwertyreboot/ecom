@@ -6,9 +6,9 @@ const authRouter = require("./routes/auth");
 const productRouter = require("./routes/product");
 const orderRouter = require("./routes/order");
 const getUser = require("./middlewares/getUser");
-const { PORT } = require("./config");
+const { PORT, MONGO_URL } = require("./config");
 
-mongoose.connect("mongodb://localhost:27017/ecom");
+mongoose.connect(MONGO_URL);
 
 const server = express();
 server.use(express.json());
